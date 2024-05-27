@@ -14,7 +14,7 @@ class TopController extends Controller
     //home表示
     public function index(){
         $recipes = Recipe::take(10)->get();
-        return view('home',compact('recipes'));
+        return view('index',compact('recipes'));
     }
 
     public function login(){
