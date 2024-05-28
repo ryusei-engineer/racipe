@@ -90,7 +90,6 @@ header img{
   text-decoration: none;
   height: 40px;
   opacity: 0;
-  transition: opacity .3s,transform .3s;
 }
 
 .overlay a{
@@ -108,7 +107,6 @@ header img{
 
 .active li{
   opacity: 1;
-  transform: translateY(16px);
 }
 
 .hamburger li + li {
@@ -1238,6 +1236,7 @@ pre{
 
 .terms span{
   display: block;
+  word-break: break-all;
 }
 
 .terms span + span{

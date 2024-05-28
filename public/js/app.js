@@ -1,6 +1,9 @@
 // import './bootstrap';
 'use strict';
+function login_check(){
+  alert('ログインして下さい')
 
+}
 {
   const open = document.getElementById("open");
   const close = document.getElementById("close");
@@ -24,6 +27,7 @@
 const slide = document.getElementById('slider');
 const prev = document.getElementById('prev');
 const next = document.getElementById('next');
+
 
 // 現在のスライドのインデックスを保持
 let currentSlideIndex = 0;
@@ -57,3 +61,4 @@ slide.children[currentSlideIndex].classList.add('active');
             document.getElementById('message').style.display = 'block';
         });
 }
+

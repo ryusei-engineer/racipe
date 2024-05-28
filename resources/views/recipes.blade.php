@@ -61,6 +61,9 @@
     </div>
     </a>
     @endforeach
+    @if($recipes->isEmpty())
+    <p class="no_favorite">検索内容に一致するレシピはありません</p>
+    @endif
     <div class="pagination">{{ $recipes->appends(request()->query())->links() }}</div>
   </div>
 </div>

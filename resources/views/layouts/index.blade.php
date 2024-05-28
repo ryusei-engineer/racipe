@@ -64,13 +64,13 @@
         <a href="{{ route('recipes') }}"><img class="icon" src="{{ asset('img/search-line.svg') }}" alt="">探す</a>
       </li>
       <li>
-        <a href="{{ route('create') }}"><img class="icon" src="{{ asset('img/add-line.svg') }}" alt="">投稿</a>
+        <a href="{{ route('create') }}"><img class="icon" src="{{ asset('img/add-line.svg') }}" @guest onClick="login_check()" @endguest  alt="">投稿</a>
       </li>
       <li>
-        <a href="{{ route('favorites') }}"><img class="icon" src="{{ asset('img/bookmark-line.svg') }}" alt="">お気に入り</a>
+        <a href="{{ route('favorites') }}"><img class="icon" src="{{ asset('img/bookmark-line.svg') }}" @guest onClick="login_check()" @endguest alt="">お気に入り</a>
       </li>
       <li>
-        <a href="{{ route('mypage') }}"><img class="icon" src="{{ asset('img/user-line.svg') }}" alt="">マイページ</a>
+        <a href="{{ route('mypage') }}"><img class="icon" src="{{ asset('img/user-line.svg') }}" @guest onClick="login_check()" @endguest alt="">マイページ</a>
       </li>
     </ul>
     
