@@ -1,15 +1,7 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
-  <title>@yield('title','Racipe')</title>
-  <link rel="icon" href="{{ asset('img/favicon.ico') }}">
-  <meta name="description" content="ラクにつくれるレシピシェアをできるサービス。レシピを「ラクにつくれる順」で検索可能、「調理時間が短い順」でも検索可能。シンプルで使いやすい。">
-  <meta name="theme-color" content="#FF3F25" >
-  <meta name="apple-mobile-web-app-status-bar-style" content="#FF3F25">
-  <!-- Google tag (gtag.js) -->
+    <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECWWD7YCS6"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -18,6 +10,14 @@
 
   gtag('config', 'G-ECWWD7YCS6');
 </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+  <title>@yield('title','Racipe')</title>
+  <link rel="icon" href="{{ asset('img/favicon.ico') }}">
+  <meta name="description" content="ラクにつくれるレシピシェアをできるサービス。レシピを「ラクにつくれる順」で検索可能、「調理時間が短い順」でも検索可能。シンプルで使いやすい。">
+  <meta name="theme-color" content="#FF3F25" >
+  <meta name="apple-mobile-web-app-status-bar-style" content="#FF3F25">
 </head>
 <body id="body">
   <header>
