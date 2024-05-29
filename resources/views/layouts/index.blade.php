@@ -9,6 +9,15 @@
   <meta name="description" content="ラクにつくれるレシピシェアをできるサービス。レシピを「ラクにつくれる順」で検索可能、「調理時間が短い順」でも検索可能。シンプルで使いやすい。">
   <meta name="theme-color" content="#FF3F25" >
   <meta name="apple-mobile-web-app-status-bar-style" content="#FF3F25">
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ECWWD7YCS6"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-ECWWD7YCS6');
+</script>
 </head>
 <body id="body">
   <header>
