@@ -17,13 +17,7 @@ Route::get('/recipes', [TopController::class,'search'])->name('recipes.search');
 
 Route::get('/recipes/search', [TopController::class,'recipes'])->name('recipes');
 
-Route::get('/create', [TopController::class,'create'])->name('create')->middleware('auth');
-
 Route::get('/contact', [TopController::class,'contact'])->name('contact');
-
-Route::get('/favorites', [TopController::class,'favorites'])->name('favorites')->middleware('auth');
-
-Route::get('/mypage', [TopController::class,'mypage'])->name('mypage')->middleware('auth');
 
 Route::get('/profile_edit', [TopController::class,'profile_edit'])->name('profile_edit');
 
@@ -41,6 +35,17 @@ Route::get('/privacy_policy', [TopController::class,'privacy_policy'])->name('pr
 
 Route::get('/faq', [TopController::class,'faq'])->name('faq');
 
+Route::group(['middleware' => 'auth'], function () {
+  Route::get('/create', [TopController::class,'create'])->name('create');
+  Route::get('/favorites', [TopController::class,'favorites'])->name('favorites');  
+  Route::get('/mypage', [TopController::class,'mypage'])->name('mypage');
+  // レシピ評価
+  Route::post('/recipe/evaluate', [RecipeController::class,'evaluate'])->name('recipe.evaluate');
+});
+
+
+
+
 // ユーザー登録
 Route::post('/register', [UserController::class,'register'])->name('register');
 
@@ -53,12 +58,11 @@ Route::post('/update', [UserController::class,'update'])->name('update');
 // レシピ投稿処理
 Route::post('/recipe/store', [RecipeController::class,'store'])->name('recipe.store');
 
-// レシピ評価
-Route::post('/recipe/evaluate', [RecipeController::class,'evaluate'])->name('recipe.evaluate')->middleware('auth');
 
 Route::delete('/recipe/delete/{recipe_id}', [RecipeController::class,'delete'])->name('recipe.delete');
 
 Route::get('/edit/{id}', [RecipeController::class,'edit'])->name('edit');
+
 Route::post('/edit_store/{id}', [RecipeController::class,'edit_store'])->name('edit_store');
 
 //ユーザー削除

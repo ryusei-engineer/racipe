@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('ittle','マイレシピ')
+@section('title','マイレシピ')
 @section('main')
 <p class="recipe_success">レシピを投稿しました</p>
 <div class="myrecipe_rakudo">

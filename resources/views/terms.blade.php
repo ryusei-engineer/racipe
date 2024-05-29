@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('ittle','利用規約')
+@section('title','利用規約')
 @section('main')
 <div class="terms">
 <p class="terms_title">利用規約</p>

@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('ittle','レシピを編集')
+@section('title','レシピを編集')
 @section('main')
 
 <form class="form_create" action="{{ route('edit_store',[ 'id' => $recipe->id]) }}" method="post" enctype="multipart/form-data">

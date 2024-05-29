@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('ittle','レシピ一覧')
+@section('title','レシピ一覧')
 @section('main')
 <div class="container">
 <form class="form_search" action="{{ route('recipes.search') }}" method="get">

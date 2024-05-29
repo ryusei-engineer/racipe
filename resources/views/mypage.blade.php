@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('ittle','プロフィール')
+@section('title','プロフィール')
 @section('main')
 
 <div class="mypage_card">

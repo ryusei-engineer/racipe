@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('ittle','お問い合わせ')
+@section('title','お問い合わせ')
 @section('main')
 <div class="sent">
   <p>お問い合わせを送信しました</p>

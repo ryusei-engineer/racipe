@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('ittle','Racipe')
+@section('title','Racipe')
 @section('main')
 
 <div class="main_title">

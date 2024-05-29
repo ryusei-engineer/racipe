@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('ittle','公開中のレシピ')
+@section('title','公開中のレシピ')
 @section('main')
 
 <div class="container">

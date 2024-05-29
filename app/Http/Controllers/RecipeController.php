@@ -122,6 +122,7 @@ class RecipeController extends Controller
         
         $recipe->user_id = $request->user_id;
         $recipe->category_id = $request->category_id;
+        $recipe->title = $request->title;
         $recipe->cooking_img1 = $cooking_img1;
         $recipe->cooking_img2 = $cooking_img2;
         $recipe->cooking_img3 = $cooking_img3;

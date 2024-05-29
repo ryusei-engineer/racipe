@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('ittle','お気に入り')
+@section('title','お気に入り')
 @section('main')
 <div class="pc_recipe_container">
   <div class="carousel">

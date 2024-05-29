@@ -324,7 +324,6 @@ form + .recipes_container{
 }
 
 .ingredient{
-  color: #606060;
   font-size: 12px;
   height: 50px;
   overflow: hidden;  
