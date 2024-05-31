@@ -966,6 +966,16 @@ form + .recipes_container{
 
 /* カルーセルここまで */
 /* ラク度評価 */
+.heading{
+  margin: 12px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.heading span{
+  font-size: 12px;
+}
+
 .stars span{
   display: flex;               /* 要素をフレックスボックスにする */
   flex-direction: row-reverse; /* 星を逆順に並べる */
@@ -1044,10 +1054,6 @@ pre{
 
 .rakudo_card p{
   margin: 32px auto 0;
-}
-
-.stars{
-  margin: 8px 0 0;
 }
 
 .rakudo_card .btn{
@@ -1362,3 +1368,7 @@ pre{
   }
   
 }
+
+
+
+recipe.b

@@ -57,6 +57,10 @@
     @endauth
     <input name="recipe_id" type="hidden" value="{{ $recipe->id }}">
         <p>ラク度を評価</p>
+        <div class="heading">
+          <span>ムズかしい</span>
+          <span>ラク</span>
+        </div>
         <div class="stars">
           <span>
             <input id="rakudo5" type="radio" name="rakudo" value="5" {{ isset($recipe_rakudo) && $recipe_rakudo->rakudo == 5 ? 'checked' : '' }}><label for="rakudo5">★</label>
