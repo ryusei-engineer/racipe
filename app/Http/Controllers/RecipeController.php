@@ -179,7 +179,7 @@ class RecipeController extends Controller
 
         // レシピのrakudo_avgを更新
         $racipe_avg = recipe_user::where('recipe_id',$request->recipe_id)->pluck('rakudo');
-        $racipe_avg = $racipe_avg->avg();
+        $racipe_avg = round($racipe_avg->avg(), 1);
         $recipe->rakudo_avg = $racipe_avg;
         $recipe->save();
 
