@@ -5,7 +5,7 @@
 <meta name="twitter:site" content="@racipe" />
 <meta name="twitter:title" content="Racipe" />
 <meta name="twitter:description" content="ラクにつくれるレシピシェアをできるサービス。レシピを「ラクにつくれる順」で検索可能、「調理時間が短い順」でも検索可能。シンプルで使いやすい。" />
-<meta name="twitter:image" content="{{ asset('img/Frame 7x_logo.svg') }}" />
+<meta name="twitter:image" content="{{ asset('img/Frame 7x_logop.png') }}" />
     <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-ECWWD7YCS6"></script>
 <script>
