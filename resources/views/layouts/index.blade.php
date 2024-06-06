@@ -20,7 +20,7 @@
   <link rel="stylesheet" href="{{ asset('css/app.css?ver1.0') }}">
   <title>@yield('title','Racipe')</title>
   <link rel="icon" href="{{ asset('img/favicon.ico') }}">
-  <meta name="description" content="ラクにつくれるレシピシェアをできるサービス。レシピを「ラクにつくれる順」で検索可能、「調理時間が短い順」でも検索可能。シンプルで使いやすい。">
+  <meta name="description" content="ラクにつくれるレシピをシェアできるサービス。レシピを「ラクにつくれる順」で検索可能、「調理時間が短い順」でも検索可能。シンプルで使いやすい。">
   <meta name="theme-color" content="#FF3F25" >
   <meta name="apple-mobile-web-app-status-bar-style" content="#FF3F25">
 </head>
