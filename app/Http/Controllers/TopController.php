@@ -13,7 +13,7 @@ class TopController extends Controller
 {
     //home表示
     public function index(){
-        $recipes = Recipe::take(10)->latest()->get();
+        $recipes = Recipe::take(7)->latest()->get();
         return view('index',compact('recipes'));
     }
 

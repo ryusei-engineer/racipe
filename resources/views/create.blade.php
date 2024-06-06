@@ -1,5 +1,5 @@
 @extends('layouts.index')
-@section('ittle','レシピを投稿')
+@section('title','レシピを投稿')
 @section('main')
 
 <form class="form_create" action="{{ route('recipe.store') }}" method="post" enctype="multipart/form-data">
